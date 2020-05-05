@@ -66,7 +66,7 @@ def load_HDFS(log_file, label_file=None, window='session', train_ratio=0.5, spli
     """
 
     print('====== Input data summary ======')
-
+    print("Using train ratio={}".format(train_ratio))
     if log_file.endswith('.npz'):
         # Split training and validation set in a class-uniform way
         data = np.load(log_file, allow_pickle=True)
