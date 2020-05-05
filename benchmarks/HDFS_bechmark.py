@@ -9,7 +9,7 @@ from loglizer import dataloader, preprocessing
 
 run_models = ['PCA', 'InvariantsMiner', 'LogClustering', 'IsolationForest', 'LR', 
               'SVM', 'DecisionTree']
-struct_log = '../data/HDFS/HDFS.log_structured.csv' # The benchmark dataset
+struct_log = '../data/HDFS/HDFS.npz' # The benchmark dataset
 
 if __name__ == '__main__':
     (x_tr, y_train), (x_te, y_test) = dataloader.load_HDFS(struct_log,
