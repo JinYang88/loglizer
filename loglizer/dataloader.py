@@ -15,6 +15,7 @@ from sklearn.utils import shuffle
 from collections import OrderedDict
 
 def _split_data(x_data, y_data=None, train_ratio=0, split_type='uniform'):
+    print("Split type:", split_type)
     if split_type == 'uniform' and y_data is not None:
         pos_idx = y_data > 0
         x_pos = x_data[pos_idx]
