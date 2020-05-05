@@ -15,7 +15,7 @@ if __name__ == '__main__':
     (x_tr, y_train), (x_te, y_test) = dataloader.load_HDFS(struct_log,
                                                            window='session', 
                                                            train_ratio=0.5,
-                                                           split_type='uniform')
+                                                           split_type='sequential')
     benchmark_results = []
     for _model in run_models:
         print('Evaluating {} on HDFS:'.format(_model))

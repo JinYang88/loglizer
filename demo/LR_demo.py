@@ -6,7 +6,7 @@ sys.path.append('../')
 from loglizer.models import LR
 from loglizer import dataloader, preprocessing
 
-struct_log = '../data/HDFS/HDFS_100k.log_structured.csv' # The structured log file
+struct_log = '../data/HDFS/HDFS.npz' # The structured log file
 label_file = '../data/HDFS/anomaly_label.csv' # The anomaly label file
 
 if __name__ == '__main__':
